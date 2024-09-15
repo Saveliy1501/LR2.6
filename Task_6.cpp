@@ -2,7 +2,7 @@
 # include <cmath>
 using namespace std;
 int main() {
-        double x, A, B, D, C, Y,p ,K;
+        double x, B, D, C,n, Q,p ,K;
         cout << "введите x ";
         cin >> x;
         cout << "введите p ";
@@ -11,14 +11,15 @@ int main() {
         cin >> K;
         cout << "введите D ";
         cin >> D;
-        cout << "введите C ";
-        cin >> C;
-        A=x+sin(p) ;
-        B=exp(K);
-        
-        Y=1+(K*K/2*A*B)-B+D*C ;
+        cout << "введите n ";
+        cin >> n;
 
-        cout << Y << " - Y равно";
+        C =p-n ;
+        B=cos(x);
+        
+        Q =(B*B/K*D)+B*C*C*C;
+
+        cout << Q << " - Q равно";
 
         return 0;
     }
