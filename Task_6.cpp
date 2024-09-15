@@ -2,24 +2,26 @@
 # include <cmath>
 using namespace std;
 int main() {
-        double x, B, D, C,n, Q,p ,K;
+        double x, B, D, C,y, T,z,K,A;
         cout << "введите x ";
         cin >> x;
-        cout << "введите p ";
-        cin >> p;
-        cout << "введите K ";
-        cin >> K;
+        cout << "введите y ";
+        cin >> y;
+        cout << "введите z ";
+        cin >> z;
         cout << "введите D ";
         cin >> D;
-        cout << "введите n ";
-        cin >> n;
+        cout << "введите C ";
+        cin >> C;
+        cout << "введите K ";
+        cin >> K;
 
-        C =p-n ;
-        B=cos(x);
+        A=x-y ;
+        B=sqrt(z);
         
-        Q =(B*B/K*D)+B*C*C*C;
+        T=cos(x)+(A*A/(K-C*D))-B ;
 
-        cout << Q << " - Q равно";
+        cout << T << " - T равно";
 
         return 0;
     }
