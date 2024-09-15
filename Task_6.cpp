@@ -2,22 +2,26 @@
 # include <cmath>
 using namespace std;
 int main() {
-        double x, D, C,y, S,K,A;
+        double x, D,p,B, C,h,Y,K,A;
         cout << "введите x ";
         cin >> x;
-        cout << "введите y ";
-        cin >> y;
-        cout << "введите C ";
-        cin >> C;
+        cout << "введите p";
+        cin >> p;
+        cout << "введите h ";
+        cin >> h;
         cout << "введите K ";
         cin >> K;
+        cout << "введите D ";
+        cin >> D;
+        cout << "введите C ";
+        cin >> C;
 
-        A=x+y ;
-        D=fabs(C-A);
+        A=x-p;
+        B=log(h);
         
-        S=10.1 +(A/C)+(D/K*K);
+        Y=0.78*B+(A*A*A/K*C*D);
 
-        cout << S << " - S равно";
+        cout << Y << " - Y равно";
 
         return 0;
     }
